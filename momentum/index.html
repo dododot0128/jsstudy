@@ -8,27 +8,37 @@
     
 </head>
 <body>
-    <h2 id="clock">00:00:00</h2>
+    <div class="wrap">
+        <h2 id="clock">00:00:00</h2>
+        
+        <form id="login-form" class="hidden">
+            <input maxlength="15" required type="text" placeholder="What is your name?">
+            <input type="submit" value="Log in" class="loginbtn">
+        </form>
 
-    <form id="login-form" class="hidden">
-        <input maxlength="15" required type="text" placeholder="What is your name?">
-        <input type="submit" value="Log in">
-    </form>
-    <form id="todo-form">
-        <input type="text" placeholder="to do list를 작성해주세요." required>
-    </form>
-    <ul id="todo-list">
+        <h1 id="greeting" class="hidden"></h1>
+        
+        <form id="todo-form">
+            <input type="text" placeholder="to do list를 작성해주세요." required>
+        </form>
+        <ul id="todo-list">
+        
+        </ul>
+        
+        <!-- //  maxlength는 html 에서 도와주지만, form 안에 들어있어야 'required'라는 browser 의 기능을 쓸수있다. -->
+        
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
 
-    </ul>
-
-   <h1 id="greeting" class="hidden"></h1>
-   <!-- //  maxlength는 html 에서 도와주지만, form 안에 들어있어야 'required'라는 browser 의 기능을 쓸수있다. -->
-
-    <div id="quote">
-        <span></span>
-        <span></span>
     </div>
-
+    
    
    
     <script src="js/greeting.js"></script>
@@ -36,5 +46,7 @@
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    
 </body>
 </html>

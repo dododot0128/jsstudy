@@ -4,6 +4,9 @@ const bgList = images[Math.floor(Math.random() * images.length)];
 
 const bgImg = document.createElement("img");
 
+bgImg.classList.add('background');
+
+
 bgImg.src =`img/${bgList}`;
 
 document.body.appendChild(bgImg);
