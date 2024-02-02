@@ -8,6 +8,7 @@ fieldset, form, label, legend {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    letter-spacing: -1px;
 }
 body {
 	line-height: 1;
@@ -49,9 +50,9 @@ ol, ul {
 }
 
 #clock {
-    font-size: 50px;
-    padding:100px;
-    font-weight: bold; 
+    font-size: 100px;
+    padding:150px 0 100px 0;
+    font-family: fantasy;
     color:#fff;
 }
 #greeting {
@@ -68,18 +69,50 @@ ol, ul {
 }
 #todo-form input {
     border:none;
+    width: 600px;
     font-size: 20px;
     background: none;
     display: inline-block;
     color:#fff;
 }
-#todo-list {
-    margin-top: 30px;
+#todo-form input::placeholder {
+    color:#fff;
 }
+#todo-list {
+    width: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+    margin:  30px auto 0 auto;
+    background-color : rgb(255,255,255,0.3);
+    border-radius: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #A4B0C0;
+	border: none;
+	border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-corner {
+	background-color: #3B4360;
+}
+
 #todo-list li {
     line-height: 30px;
     font-style: 25px;
-    color:#fff;
+    color:#000;
 }
 #todo-list li button { 
     background: none; 
@@ -88,14 +121,15 @@ ol, ul {
     border-radius: 0;
 }
 #quote {
+    padding-top: 20px;
+    border-top: 1px solid #fff;
     position: absolute; 
     bottom:40px; 
-    left: 50%;
-    transform: translateX(-50%);
+    left: 40px;
 }
-#quote span { display: block;color:#fff; }
+#quote span { color:#fff; }
 #quote span:first-child {font-size: 20px;}
-#quote span:last-child {font-size: 16px; margin-top: 10px;}
+#quote span:last-child {font-size: 14px; margin-left: 20px;}
 
 #weather {
     position: absolute; 
