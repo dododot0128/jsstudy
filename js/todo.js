@@ -28,7 +28,7 @@ function deleteTodo(event) {
 }
 
 function paintToDo(newTodo) {
-    console.log("paint todo", newTodo)
+    // console.log("paint todo", newTodo)
     const li = document.createElement("li");
     li.id = newTodo.id;
     const span = document.createElement("span");
